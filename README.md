@@ -1845,6 +1845,10 @@ Then type `python main.py` in the terminal then press ENTER to run the program.
 Watch the video below for a full tutorial on how to run the program.
 
 
+https://github.com/user-attachments/assets/b4cb2247-b828-49c0-a50d-d6c0dac1ba93
+
+
+
 ## Contributions
 
 If you want to contribute to this project, you can follow these steps:
