@@ -26,7 +26,7 @@ If you are starting with desktop website or mobile website test automation, then
 
 ## Usage
 
-1. Customize the code below with your SIA or SSO account.
+#### **1. Customize the code below with your SIA or SSO account.**
 ```
 # ========= SSO MERCUBUANA ACCOUNT ========= #
 username = "41523010XXX" # REPLACE WITH STUDENT IDENTIFICATION NUMBER (NIM)
@@ -34,165 +34,27 @@ password = "123456789"  # REPLACE WITH YOUR SIA PASSWORD
 # ========================================== #
 ```
 
-2. You can customize the waiting time of each process, and set its auto-answer.
+#### **2. You can customize the waiting time of each process, and set its auto-answer.**
 ```
 # ======================= SUPPORT ============================ #
-
 # Waiting Time of Each Process
 delay = 0.3 #CUSTOMIZE THE DELAY TIME OF EACH PROCESS YOU WANT.
+
+# Answer Options
+# HARAPAN :                 # KEPUASAN :
+# - Tidak Penting           # - Tidak Puas
+# - Cukup Penting           # - Kurang Puas
+# - Penting                 # - Puas
+# - Sangat Penting          # - Sangat Puas
 
 # Survey Answers
 harapan = 'Penting'
 kepuasan = 'Puas'
 # ============================================================ #
 ```
-The code above declares 9 variables for courses, if the courses you take are less than 9 you can delete the unused variables. And you need to delete the program that is in `MAIN PROGRAM` which has the title COURSE ORDER and adjust with jhapus accordingly.
-```
-# =================================== FIRST COURSE ===================================  #
-survey_course_button = driver.find_element(By.XPATH, course)
-survey_course_button.click()
-time.sleep(delay)
+Make sure you adjust the time in seconds accordingly, and also choose the answer that suits you.
 
-# Click the Fill out Survey button
-survey__button = driver.find_element(By.XPATH, course1)
-survey__button.click()
-time.sleep(delay)
-# Run the survey process by calling the survey process function
-proses_survey(driver, course_checkboxes, auto_scroll, advice1, delay, success, failed)
-# ===================================================================================  #
-
-
-# =================================== SECOND COURSE ===================================  #
-survey_course_button = driver.find_element(By.XPATH, course)
-survey_course_button.click()
-time.sleep(delay)
-
-# Click the Fill out Survey button
-survey__button = driver.find_element(By.XPATH, course2)
-survey__button.click()
-time.sleep(delay)
-# Run the survey process by calling the survey process function
-proses_survey(driver, course_checkboxes, auto_scroll, advice2, delay, success, failed)
-# ===================================================================================  #
-
-
-# =================================== THIRD COURSE ===================================  #
-survey_course_button = driver.find_element(By.XPATH, course)
-survey_course_button.click()
-time.sleep(delay)
-
-# Click the Fill out Survey button
-survey__button = driver.find_element(By.XPATH, course3)
-survey__button.click()
-time.sleep(delay)
-# Run the survey process by calling the survey process function
-proses_survey(driver, course_checkboxes, auto_scroll, advice3, delay, success, failed)
-# ===================================================================================  #
-
-
-# =================================== FOURTH COURSE ===================================  #
-survey_course_button = driver.find_element(By.XPATH, course)
-survey_course_button.click()
-time.sleep(delay)
-
-# Click the Fill out Survey button
-survey__button = driver.find_element(By.XPATH, course4)
-survey__button.click()
-time.sleep(delay)
-# Run the survey process by calling the survey process function
-proses_survey(driver, course_checkboxes, auto_scroll, advice4, delay, success, failed)
-# ===================================================================================  #
-
-
-# =================================== FIFTH COURSE ===================================  #
-survey_course_button = driver.find_element(By.XPATH, course)
-survey_course_button.click()
-time.sleep(delay)
-
-# Click the Fill out Survey button
-survey__button = driver.find_element(By.XPATH, course5)
-survey__button.click()
-time.sleep(delay)
-# Run the survey process by calling the survey process function
-proses_survey(driver, course_checkboxes, auto_scroll, advice5, delay, success, failed)
-# ===================================================================================  #
-
-
-# =================================== SIXTH COURSE ===================================  #
-survey_course_button = driver.find_element(By.XPATH, course)
-survey_course_button.click()
-time.sleep(delay)
-
-# Click the Fill out Survey button
-survey__button = driver.find_element(By.XPATH, course6)
-survey__button.click()
-time.sleep(delay)
-# Run the survey process by calling the survey process function
-proses_survey(driver, course_checkboxes, auto_scroll, advice6, delay, success, failed)
-# ===================================================================================  #
-
-
-# =================================== SEVENTH COURSE ===================================  #
-survey_course_button = driver.find_element(By.XPATH, course)
-survey_course_button.click()
-time.sleep(delay)
-
-# Click the Fill out Survey button
-survey__button = driver.find_element(By.XPATH, course7)
-survey__button.click()
-time.sleep(delay)
-# Run the survey process by calling the survey process function
-proses_survey(driver, course_checkboxes, auto_scroll, advice7, delay, success, failed)
-# ===================================================================================  #
-
-
-# =================================== EIGHTH COURSE ===================================  #
-survey_course_button = driver.find_element(By.XPATH, course)
-survey_course_button.click()
-time.sleep(delay)
-
-# Click the Fill out Survey button
-survey__button = driver.find_element(By.XPATH, course8)
-survey__button.click()
-time.sleep(delay)
-# Run the survey process by calling the survey process function
-proses_survey(driver, course_checkboxes, auto_scroll, advice8, delay, success, failed)
-# ===================================================================================  #
-
-
-# =================================== NINTH COURSE ===================================  #
-survey_course_button = driver.find_element(By.XPATH, course)
-survey_course_button.click()
-time.sleep(delay)
-
-# Click the Fill out Survey button
-survey__button = driver.find_element(By.XPATH, course9)
-survey__button.click()
-time.sleep(delay)
-# Run the survey process by calling the survey process function
-proses_survey(driver, course_checkboxes, auto_scroll, advice9, delay, success, failed)
-# ===================================================================================  #
-```
-
-3. You can also set how long it takes to pause each process running in the program by setting the value of the `delay` variable which has a float value and you can change it to an integer as below.
-```
-# ========= DELAY TIME ========== #
-delay = 0.3 #CUSTOMIZE THE DELAY TIME OF EACH PROCESS YOU WANT.
-```
-The time read by the program is in seconds so you can adjust it based on seconds.
-
-4. Adjust the answers to fill out your survey by changing the `id` section or the symbol `#` in the data list or array of checkboxes below.
-```
-# ========= SURVEY ANSWERS ========= #
-# ('TABLE FOR EXPECTATION SURVEY ANSWERS')   ('TABLE FOR SATISFACTION SURVEY ANSWERS')
-#   "#h1.harapan" = Sangat Penting           "#k4.kepuasan" = Sangat Puas
-#   "#h2.harapan" = Penting                  "#k3.kepuasan" = Puas
-#   "#h3.harapan" = Cukup Penting            "#k2.kepuasan" = Cukup Puas
-#   "#h4.harapan" = Ttdak Penting            "#k.kepuasan" = Tidak Puas
-```
-Make sure you have customized each of the above processes.
-
-5. Adjust the number of courses being taken in this semester
+#### **3. Adjust the number of courses being taken in this semester.**
 ```
 # ================================ COURSE 1 ================================  #
 
@@ -1194,7 +1056,7 @@ button_confirm.click()
 time.sleep(delay)
 # ================================================================================= #
 ```
-This program will fill out a survey on each course, make sure the program is in accordance with the number of courses you are taking this semester. If you only take 7 courses, then delete the program with tags `COURSE 8` and `COURSE 9`. As in the example below.
+### This program will fill out a survey on each course, make sure the program is in accordance with the number of courses you are taking this semester. If you only take 7 courses, then delete the program with tags `COURSE 8` and `COURSE 9`. As in the example below.
 ```
 # ================================ COURSE 1 ================================  #
 
@@ -1974,7 +1836,8 @@ button_confirm.click()
 time.sleep(delay)
 ```
 
-6. After the program has been adjusted to your needs, the next step is to run a program called `main.py`, namely by opening a terminal in Visual Studio Code by pressing the `Terminal>New Terminal` menu or you can use a shortcut on the keyboard by pressing the `CTRL key +SHIFT+`` simultaneously.
+#### **4. How to run the program**
+After the program has been adjusted to your needs, the next step is to run a program called `main.py`, namely by opening a terminal in Visual Studio Code by pressing the `Terminal>New Terminal` menu or you can use a shortcut on the keyboard by pressing the `CTRL key +SHIFT+`` simultaneously.
 
 Then type `python main.py` in the terminal then press ENTER to run the program.
 
