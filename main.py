@@ -30,9 +30,15 @@ login = '//*[@id="auth"]/div/div/div[2]/div/form/button'
 # ================================================================================= #
 
 # ======================= SUPPORT ============================ #
-
 # Waiting Time of Each Process
 delay = 0.3 #CUSTOMIZE THE DELAY TIME OF EACH PROCESS YOU WANT.
+
+# Answer Options
+# HARAPAN :                 # KEPUASAN :
+# - Tidak Penting           # - Tidak Puas
+# - Cukup Penting           # - Kurang Puas
+# - Penting                 # - Puas
+# - Sangat Penting          # - Sangat Puas
 
 # Survey Answers
 harapan = 'Penting'
