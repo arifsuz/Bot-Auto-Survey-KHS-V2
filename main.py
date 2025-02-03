@@ -1,6 +1,6 @@
 #=============================================================================================================================#
     # Author = Muhamad Nur Arif
-    # Description = This script is used to fill out the survey form on the Mercubuana PRISMA website.
+    # Description = This script is used to fill out the survey form on the Mercubuana PRIMA website.
     # SKS = 24 (9 Courses)
     # Notes : If your number of credits in this semester is less than 24 credits,
     #         then delete the program command with the 'COURSE' tag below. Or you can match the total courses this semester.
@@ -43,6 +43,11 @@ delay = 0.3 #CUSTOMIZE THE DELAY TIME OF EACH PROCESS YOU WANT.
 # Survey Answers
 harapan = 'Penting'
 kepuasan = 'Puas'
+
+# Button
+btn_next = '//*[@id="survey-form"]/div[2]/button[2]'
+btn_submit = '//*[@id="save-quisioner-mahasiswa"]'
+btn_confirm = '/html/body/div[2]/div/div[3]/button[1]'
 # ============================================================ #
 
 # ---------------------------------------------------- MAIN PROGRAM ---------------------------------------------------- #
@@ -128,7 +133,7 @@ dropdown.click()
 dropdown.send_keys(kepuasan)
 time.sleep(delay)
 
-button_next = driver.find_element(By.XPATH, '//*[@id="survey-form"]/div[2]/button[2]')
+button_next = driver.find_element(By.XPATH, btn_next)
 button_next.click()
 time.sleep(delay)
 
@@ -183,7 +188,7 @@ dropdown.click()
 dropdown.send_keys(kepuasan)
 time.sleep(delay)
 
-button_next = driver.find_element(By.XPATH, '//*[@id="survey-form"]/div[2]/button[2]')
+button_next = driver.find_element(By.XPATH, btn_next)
 button_next.click()
 time.sleep(delay)
 
@@ -238,7 +243,7 @@ dropdown.click()
 dropdown.send_keys(kepuasan)
 time.sleep(delay)
 
-button_next = driver.find_element(By.XPATH, '//*[@id="survey-form"]/div[2]/button[2]')
+button_next = driver.find_element(By.XPATH, btn_next)
 button_next.click()
 time.sleep(delay)
 
@@ -293,7 +298,7 @@ dropdown.click()
 dropdown.send_keys(kepuasan)
 time.sleep(delay)
 
-button_next = driver.find_element(By.XPATH, '//*[@id="survey-form"]/div[2]/button[2]')
+button_next = driver.find_element(By.XPATH, btn_next)
 button_next.click()
 time.sleep(delay)
 
@@ -348,7 +353,7 @@ dropdown.click()
 dropdown.send_keys(kepuasan)
 time.sleep(delay)
 
-button_next = driver.find_element(By.XPATH, '//*[@id="survey-form"]/div[2]/button[2]')
+button_next = driver.find_element(By.XPATH, btn_next)
 button_next.click()
 time.sleep(delay)
 
@@ -403,7 +408,7 @@ dropdown.click()
 dropdown.send_keys(kepuasan)
 time.sleep(delay)
 
-button_next = driver.find_element(By.XPATH, '//*[@id="survey-form"]/div[2]/button[2]')
+button_next = driver.find_element(By.XPATH, btn_next)
 button_next.click()
 time.sleep(delay)
 
@@ -458,7 +463,7 @@ dropdown.click()
 dropdown.send_keys(kepuasan)
 time.sleep(delay)
 
-button_next = driver.find_element(By.XPATH, '//*[@id="survey-form"]/div[2]/button[2]')
+button_next = driver.find_element(By.XPATH, btn_next)
 button_next.click()
 time.sleep(delay)
 
@@ -513,7 +518,7 @@ dropdown.click()
 dropdown.send_keys(kepuasan)
 time.sleep(delay)
 
-button_next = driver.find_element(By.XPATH, '//*[@id="survey-form"]/div[2]/button[2]')
+button_next = driver.find_element(By.XPATH, btn_next)
 button_next.click()
 time.sleep(delay)
 
@@ -568,7 +573,7 @@ dropdown.click()
 dropdown.send_keys(kepuasan)
 time.sleep(delay)
 
-button_next = driver.find_element(By.XPATH, '//*[@id="survey-form"]/div[2]/button[2]')
+button_next = driver.find_element(By.XPATH, btn_next)
 button_next.click()
 time.sleep(delay)
 
@@ -623,14 +628,13 @@ dropdown.click()
 dropdown.send_keys(kepuasan)
 time.sleep(delay)
 
-button_sumbit = driver.find_element(By.XPATH, '//*[@id="save-quisioner-mahasiswa"]')
+button_submit = driver.find_element(By.XPATH, btn_submit)
 button_submit.click()
 time.sleep(delay)
 
-button_confirm = driver.find_element(By.XPATH, '/html/body/div[2]/div/div[3]/button[1]')
+button_confirm = driver.find_element(By.XPATH, btn_confirm)
 button_confirm.click()
-time.sleep(delay)
-# ================================================================================= #
+time.sleep(5)
 
 # ================================ COURSE 1 ================================  #
 
@@ -680,7 +684,7 @@ dropdown.click()
 dropdown.send_keys(kepuasan)
 time.sleep(delay)
 
-button_next = driver.find_element(By.XPATH, '//*[@id="survey-form"]/div[2]/button[2]')
+button_next = driver.find_element(By.XPATH, btn_next)
 button_next.click()
 time.sleep(delay)
 
@@ -735,13 +739,13 @@ dropdown.click()
 dropdown.send_keys(kepuasan)
 time.sleep(delay)
 
-button_sumbit = driver.find_element(By.XPATH, '//*[@id="save-quisioner-mahasiswa"]')
+button_sumbit = driver.find_element(By.XPATH, btn_submit)
 button_sumbit.click()
 time.sleep(delay)
 
-button_confirm = driver.find_element(By.XPATH, '/html/body/div[2]/div/div[3]/button[1]')
+button_confirm = driver.find_element(By.XPATH, btn_confirm)
 button_confirm.click()
-time.sleep(delay)
+time.sleep(5)
 
 # ================================ COURSE 2 ================================  #
 
@@ -791,7 +795,7 @@ dropdown.click()
 dropdown.send_keys(kepuasan)
 time.sleep(delay)
 
-button_next = driver.find_element(By.XPATH, '//*[@id="survey-form"]/div[2]/button[2]')
+button_next = driver.find_element(By.XPATH, btn_next)
 button_next.click()
 time.sleep(delay)
 
@@ -846,13 +850,13 @@ dropdown.click()
 dropdown.send_keys(kepuasan)
 time.sleep(delay)
 
-button_sumbit = driver.find_element(By.XPATH, '//*[@id="save-quisioner-mahasiswa"]')
+button_sumbit = driver.find_element(By.XPATH, btn_submit)
 button_sumbit.click()
 time.sleep(delay)
 
-button_confirm = driver.find_element(By.XPATH, '/html/body/div[2]/div/div[3]/button[1]')
+button_confirm = driver.find_element(By.XPATH, btn_confirm)
 button_confirm.click()
-time.sleep(delay)
+time.sleep(5)
 
 # ================================ COURSE 3 ================================  #
 
@@ -902,7 +906,7 @@ dropdown.click()
 dropdown.send_keys(kepuasan)
 time.sleep(delay)
 
-button_next = driver.find_element(By.XPATH, '//*[@id="survey-form"]/div[2]/button[2]')
+button_next = driver.find_element(By.XPATH, btn_next)
 button_next.click()
 time.sleep(delay)
 
@@ -957,13 +961,13 @@ dropdown.click()
 dropdown.send_keys(kepuasan)
 time.sleep(delay)
 
-button_sumbit = driver.find_element(By.XPATH, '//*[@id="save-quisioner-mahasiswa"]')
+button_sumbit = driver.find_element(By.XPATH, btn_submit)
 button_sumbit.click()
 time.sleep(delay)
 
-button_confirm = driver.find_element(By.XPATH, '/html/body/div[2]/div/div[3]/button[1]')
+button_confirm = driver.find_element(By.XPATH, btn_confirm)
 button_confirm.click()
-time.sleep(delay)
+time.sleep(5)
 
 # ================================ COURSE 4 ================================  #
 
@@ -1013,7 +1017,7 @@ dropdown.click()
 dropdown.send_keys(kepuasan)
 time.sleep(delay)
 
-button_next = driver.find_element(By.XPATH, '//*[@id="survey-form"]/div[2]/button[2]')
+button_next = driver.find_element(By.XPATH, btn_next)
 button_next.click()
 time.sleep(delay)
 
@@ -1068,13 +1072,13 @@ dropdown.click()
 dropdown.send_keys(kepuasan)
 time.sleep(delay)
 
-button_sumbit = driver.find_element(By.XPATH, '//*[@id="save-quisioner-mahasiswa"]')
+button_sumbit = driver.find_element(By.XPATH, btn_submit)
 button_sumbit.click()
 time.sleep(delay)
 
-button_confirm = driver.find_element(By.XPATH, '/html/body/div[2]/div/div[3]/button[1]')
+button_confirm = driver.find_element(By.XPATH, btn_confirm)
 button_confirm.click()
-time.sleep(delay)
+time.sleep(5)
 
 # ================================ COURSE 5 ================================  #
 
@@ -1124,7 +1128,7 @@ dropdown.click()
 dropdown.send_keys(kepuasan)
 time.sleep(delay)
 
-button_next = driver.find_element(By.XPATH, '//*[@id="survey-form"]/div[2]/button[2]')
+button_next = driver.find_element(By.XPATH, btn_next)
 button_next.click()
 time.sleep(delay)
 
@@ -1179,13 +1183,13 @@ dropdown.click()
 dropdown.send_keys(kepuasan)
 time.sleep(delay)
 
-button_sumbit = driver.find_element(By.XPATH, '//*[@id="save-quisioner-mahasiswa"]')
+button_sumbit = driver.find_element(By.XPATH, btn_submit)
 button_sumbit.click()
 time.sleep(delay)
 
-button_confirm = driver.find_element(By.XPATH, '/html/body/div[2]/div/div[3]/button[1]')
+button_confirm = driver.find_element(By.XPATH, btn_confirm)
 button_confirm.click()
-time.sleep(delay)
+time.sleep(5)
 
 # ================================ COURSE 6 ================================  #
 
@@ -1235,7 +1239,7 @@ dropdown.click()
 dropdown.send_keys(kepuasan)
 time.sleep(delay)
 
-button_next = driver.find_element(By.XPATH, '//*[@id="survey-form"]/div[2]/button[2]')
+button_next = driver.find_element(By.XPATH, btn_next)
 button_next.click()
 time.sleep(delay)
 
@@ -1290,13 +1294,13 @@ dropdown.click()
 dropdown.send_keys(kepuasan)
 time.sleep(delay)
 
-button_sumbit = driver.find_element(By.XPATH, '//*[@id="save-quisioner-mahasiswa"]')
+button_sumbit = driver.find_element(By.XPATH, btn_submit)
 button_sumbit.click()
 time.sleep(delay)
 
-button_confirm = driver.find_element(By.XPATH, '/html/body/div[2]/div/div[3]/button[1]')
+button_confirm = driver.find_element(By.XPATH, btn_confirm)
 button_confirm.click()
-time.sleep(delay)
+time.sleep(5)
 
 # ================================ COURSE 7 ================================  #
 
@@ -1346,7 +1350,7 @@ dropdown.click()
 dropdown.send_keys(kepuasan)
 time.sleep(delay)
 
-button_next = driver.find_element(By.XPATH, '//*[@id="survey-form"]/div[2]/button[2]')
+button_next = driver.find_element(By.XPATH, btn_next)
 button_next.click()
 time.sleep(delay)
 
@@ -1401,13 +1405,13 @@ dropdown.click()
 dropdown.send_keys(kepuasan)
 time.sleep(delay)
 
-button_sumbit = driver.find_element(By.XPATH, '//*[@id="save-quisioner-mahasiswa"]')
+button_sumbit = driver.find_element(By.XPATH, btn_submit)
 button_sumbit.click()
 time.sleep(delay)
 
-button_confirm = driver.find_element(By.XPATH, '/html/body/div[2]/div/div[3]/button[1]')
+button_confirm = driver.find_element(By.XPATH, btn_confirm)
 button_confirm.click()
-time.sleep(delay)
+time.sleep(5)
 
 # ================================ COURSE 8 ================================  #
 
@@ -1457,7 +1461,7 @@ dropdown.click()
 dropdown.send_keys(kepuasan)
 time.sleep(delay)
 
-button_next = driver.find_element(By.XPATH, '//*[@id="survey-form"]/div[2]/button[2]')
+button_next = driver.find_element(By.XPATH, btn_next)
 button_next.click()
 time.sleep(delay)
 
@@ -1512,13 +1516,13 @@ dropdown.click()
 dropdown.send_keys(kepuasan)
 time.sleep(delay)
 
-button_sumbit = driver.find_element(By.XPATH, '//*[@id="save-quisioner-mahasiswa"]')
+button_sumbit = driver.find_element(By.XPATH, btn_submit)
 button_sumbit.click()
 time.sleep(delay)
 
-button_confirm = driver.find_element(By.XPATH, '/html/body/div[2]/div/div[3]/button[1]')
+button_confirm = driver.find_element(By.XPATH, btn_confirm)
 button_confirm.click()
-time.sleep(delay)
+time.sleep(5)
 
 # ================================ COURSE 9 ================================  #
 
@@ -1568,7 +1572,7 @@ dropdown.click()
 dropdown.send_keys(kepuasan)
 time.sleep(delay)
 
-button_next = driver.find_element(By.XPATH, '//*[@id="survey-form"]/div[2]/button[2]')
+button_next = driver.find_element(By.XPATH, btn_next)
 button_next.click()
 time.sleep(delay)
 
@@ -1623,13 +1627,13 @@ dropdown.click()
 dropdown.send_keys(kepuasan)
 time.sleep(delay)
 
-button_sumbit = driver.find_element(By.XPATH, '//*[@id="save-quisioner-mahasiswa"]')
+button_sumbit = driver.find_element(By.XPATH, btn_submit)
 button_sumbit.click()
 time.sleep(delay)
 
-button_confirm = driver.find_element(By.XPATH, '/html/body/div[2]/div/div[3]/button[1]')
+button_confirm = driver.find_element(By.XPATH, btn_confirm)
 button_confirm.click()
-time.sleep(delay)
+time.sleep(5)
 # ================================================================================= #
 
 time.sleep(600)
