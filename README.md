@@ -1844,11 +1844,7 @@ Then type `python main.py` in the terminal then press ENTER to run the program.
 ## Video Customize Guide
 Watch the video below for a full tutorial on how to run the program.
 
-<video src="video-guide.mp4" controls="controls" muted="muted" style="max-width:720px;">
-</video>
-
 https://github.com/user-attachments/assets/b4cb2247-b828-49c0-a50d-d6c0dac1ba93
-
 
 
 ## Contributions
